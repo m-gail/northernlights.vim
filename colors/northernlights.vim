@@ -75,6 +75,8 @@ call s:highlight('Folded', s:foreground_alt_1, 'NONE')
 
 
 " Treesitter
+hi link @function.builtin Function
+hi link @function Function
 hi link TSFunction Function
 hi link TSFuncBuiltin Function
 hi link TSMethod Method
@@ -83,6 +85,7 @@ hi link TSTitle Fg
 
 hi link TSKeyword Keyword
 hi link TSType Type
+hi link @variable Fg
 hi link TSVariableBuiltin Keyword
 hi link TSKeywordFunction Keyword
 hi link TSKeywordOperator Keyword
@@ -99,12 +102,16 @@ hi link TSSCharacter Character
 hi link TSInclude Keyword
 
 hi link TSAttribute Fg
+hi link @field Fg
 hi link TSField Fg
 hi link TSOperator Fg
+hi link @parameter Fg
 hi link TSParameter Fg
 hi link TSProperty Fg
 hi link TSParameterReference Fg
+hi link @constructor Type
 hi link TSConstructor Type
+hi link @punctuation Fg
 hi link TSPunctBracket Fg
 hi link TSPunctDelimiter Fg
 hi link TSPunctSpecial Fg
